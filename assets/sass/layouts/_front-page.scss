@@ -6,6 +6,8 @@
 
   .site-inner {
 
+    margin-bottom: 0;
+
     &:after {
       clear: none;
     }
@@ -18,25 +20,24 @@
     max-width: 650px;
     margin: 100px auto 0 auto;
     height: 80vh;
-    .arc-top {
-      position: absolute;
-      left: 0;
-
-      right: 0;
-
-      @media (max-width: 780px) {
-        bottom: -85px;
-      }
-      @media (min-width: 781px) {
-        bottom: -84px;
-      }
-    }
   }
 
   .front-page-2 {
     background: linear-gradient(180deg, #161923, $umbra--dark-blue 60%);
     text-align: center;
     position: relative;
+
+    .arc-top {
+      position: absolute;
+      left: 0;
+      right: 0;
+      height: 80vh;
+      top: -100px;
+
+      img {
+        height: 100px;
+      }
+    }
 
     .wrap {
       padding: 2em 5%;
