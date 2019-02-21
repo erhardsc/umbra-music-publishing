@@ -1,0 +1,57 @@
+#slide_out_sidebar {
+
+  .nf-form-title {
+    margin: 0 auto 2em auto;
+    text-align: center;
+  }
+
+  .widget_ninja_forms_widget {
+    height: 100%;
+
+    h3 {
+      text-align: left;
+      font-size: 40px;
+
+      &::before {
+        content: none;
+      }
+    }
+  }
+
+  .list-wrap {
+
+    .nf-field-label {
+      margin: 0 auto;
+    }
+
+  }
+
+  .nf-form-fields-required {
+    display: none;
+  }
+
+  input, textarea {
+    padding-left: 0;
+    background: transparent;
+  }
+
+  .submit-wrap {
+    text-align: center;
+  }
+
+  input[type=button]{
+    padding-left: 20px;
+    color: $white;
+    border-bottom: 1px solid $white;
+    background: none;
+    box-shadow: none;
+    border-radius: 0;
+
+    &:hover {
+      box-shadow: none;
+    }
+
+
+  }
+
+}

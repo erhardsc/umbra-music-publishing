@@ -1,97 +1,66 @@
 .home {
 
-  p {
-    color: $light;
-  }
-
-  .site-inner {
-
-    margin-bottom: 0;
-
-    &:after {
-      clear: none;
-    }
-    padding: 0 !important;
-  }
-
-  .front-page-1 {
-    text-align: center;
+  h2 {
     color: $white;
-    max-width: 650px;
-    margin: 100px auto 0 auto;
-    height: 80vh;
   }
 
-  .front-page-2 {
-    background: linear-gradient(180deg, #161923, $umbra--dark-blue 60%);
-    text-align: center;
+  article.entry {
+    background-color: transparent;
+  }
+
+  .virtuoso-block.frame-row {
     position: relative;
+    transform: rotate(180deg);
+    top: 1px;
 
-    .arc-top {
-      position: absolute;
-      left: 0;
-      right: 0;
-      height: 80vh;
-      top: -100px;
+    svg {
+      path {
+        fill: #161923;
+      }
 
-      img {
-        height: 100px;
+    }
+  }
+
+  .virtuoso-block.welcome  {
+
+    .image_wrap {
+      width: 200px;
+      margin: 0 auto;
+
+      @include media-query('med') {
+        width: initial;
       }
     }
 
-    .wrap {
-      padding: 2em 5%;
+    h1 {
+      visibility: hidden;
     }
+  }
 
+  .virtuoso-block.bio {
+    background: linear-gradient(180deg, #161923, $umbra--dark-blue 60%);
+    background-image: url('../../../../plugins/virtuoso-grandchild/assets/images/moon-bkg.svg') no-repeat 0;
+    text-align: center;
+    position: relative;
 
-
-    .widget_text {
-      max-width: 400px;
+    .wrap {
+      max-width: 600px;
       margin: 0 auto;
-
     }
 
     //background: url('../../project-specific/assets/images/moon-bkg.svg') no-repeat 0;
     //background-size: contain;
 
   }
-  .front-page-5 {
+  .virtuoso-block.team-grid {
     text-align: center;
     background: url('../../../../plugins/virtuoso-grandchild/assets/images/bottom-bkg.svg');
-    background-position:center;
+    background-position: center;
     background-size: cover;
 
-    //background: $umbra--dark-blue;
-
-    .wrap {
-      padding: 2em 5% 4em 5%;
+    strong {
+      color: $white;
     }
-
-    .front-team_wrap {
-      display: flex;
-      justify-content: center;
-      flex-direction: column;
-      align-items: center;
-
-      @include media-query('med'){
-        flex-direction: row;
-        justify-content: space-evenly;
-        align-items: unset;
-      }
-
-      .team-member{
-        padding-top: 2em;
-        max-width: 300px;
-
-        p {
-          text-align: left;
-          padding-top: 1em;
-        }
-
-      }
-
-    }
-
 
   }
 

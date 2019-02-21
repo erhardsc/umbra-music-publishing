@@ -1,0 +1,27 @@
+#slide_out_sidebar {
+
+  .widgettitle {
+    text-align: left;
+  }
+
+  .image_wrap {
+    border-radius: 4px;
+    box-shadow: none;
+    width: 100%;
+
+    img {
+      border-radius: 4px;
+    }
+  }
+
+  .widget {
+    width: 84%;
+    margin-top: 20px;
+  }
+
+ #close_slider {
+   top: 20px;
+   background: none;
+ }
+
+}

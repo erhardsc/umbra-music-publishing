@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css?family=Oxygen:400');
+@import url('https://fonts.googleapis.com/css?family=Rajdhani:600');
+
+// Common Fonts
+$font-family--source-sans-pro: 'Source Sans Pro', sans-serif;
+$font-family--hind-avenir: Hind, Avenir, Helvetica, arial;
+$font-family--roboto: 'Roboto', sans-serif;
+
+$font-family--oxygen: 'Oxygen', sans-serif;
+$font-family--rajdhani: 'Rajdhani', sans-serif;
+
+// Base Typography
+$html--font-size: 62.5%;
+
+$base--font-family: $font-family--oxygen;
+$base--font-size: 16px;
+$base--font-weight: 400;
+$base--font-size--small-screen: 14px;
+$base__div--font-size: 2rem;
+$base__div--font-size--small-screen: 1.8rem;
+$base--line-height: 1.612;
+
+// Headings
+$headings--font-family: $font-family--rajdhani;
+$headings--font-weight: 600;
+$headings--letter-spacing: 1.5px;
+$headings--line-height: 1.2;
+$h1--font-size:  48px;
+$h2--font-size:  40px;
+$h3--font-size:  36px;
+$h4--font-size:  30px;
+$h5--font-size:  24px;
+$h6--font-size:  22px;
+
+// Elements
+$blockquote--font-size: 30px;
+$input--font-size: 18px;
+$button--font-size: 16px;
+$floatingContact--font-size: 25px;
+
+//
+// Navigation
+//===========
+$nav--font-family: $font-family--oxygen;
+$nav--font-size: 18px;
+$nav--font-weight: 400;
+$nav--letter-spacing: 1;
+$submenu--font-size: 14px;
+$primary-nav--font-size: 14px;
+$archive-pagination--font-size: 16px;
+
+//
+// Header
+//==================
+$site-title--font-size: 30px;
+$site-description--font-size: 16px;
+
+
+//
+// Footer
+//==================
+$site-footer--font-size: 14px;
+$footer-widgets--font-size: 14px;
+
+//
+// Entry Content
+//===================
+$entry-meta--font-size: 16px;
+$entry-header__entry-meta--font-size: 16px;
+$entry-footer__entry-meta--font-size: 16px;
+
+$entry-title--font-size: 36px;
+
+//
+// Comments
+//===================
+$comments--font-size: 16px;
+
+//
+// Widgets
+//===================
+$widget-title--font-size: 18px;
+$featured-content__entry-title--font-size: 20px;
+
+//
+// Slide out sidebar
+//===================
+$side-out-sidebar--font-size: 40px;
+
+//
+// Plugins
+//===================
+$enews--font-size: 16px;
+
+//
+// General Components
+//===================
+$breadcrumbs--font-size: 16px;
+$author-box--font-size: 18px;
+$author-box__Title--font-size: 20px;
+$after-entry--font-size: 18px;
+$archive-description--font-size: 18px;
+$archive-title--font-size: 20px;
