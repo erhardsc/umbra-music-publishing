@@ -1,0 +1,23 @@
+.page-template-default {
+
+  .entry {
+    background: $umbra--dark-blue;
+  }
+
+  .entry-header {
+    text-align: center;
+    padding-top: 30px;
+    color: $white;
+  }
+  .entry-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px 5% 0 5%;
+
+    @include media-query('med') {
+      padding-left: 70px;
+      padding-right: 70px;
+    }
+
+  }
+}
