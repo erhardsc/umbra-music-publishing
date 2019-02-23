@@ -12,7 +12,7 @@
     position: relative;
     transform: rotate(180deg);
     top: 1px;
-
+    height: 0;
     svg {
       path {
         fill: #161923;
@@ -60,6 +60,35 @@
 
     .wrap {
       max-width: 1100px;
+    }
+
+    .team-member {
+
+      @include media-query('lg') {
+        transform: scale(1);
+        transition: transform 200ms ease-in-out;
+
+        p {
+          opacity: 0;
+          transition: opacity 200ms ease-in-out;
+        }
+        &.visible {
+
+          p {
+            opacity: 1;
+            transition: opacity 200ms ease-in-out;
+          }
+        }
+
+        &:hover {
+          cursor: pointer;
+          .image-wrap {
+            transform: scale(1.05);
+            transition: transform 200ms ease-in-out;
+          }
+
+        }
+      }
     }
 
     strong {

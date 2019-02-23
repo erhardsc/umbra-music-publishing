@@ -1,0 +1,19 @@
+.nav-primary {
+
+  a {
+    text-transform: capitalize;
+  }
+
+  .menu-contact {
+    a {
+      @include media-query("med"){
+        padding: 1em 2em;
+        @include rect-button($white, none, $hover-effect: true);
+        border-color: $umbra--blue-accent;
+        margin-left: 15px;
+      }
+
+    }
+
+  }
+}
