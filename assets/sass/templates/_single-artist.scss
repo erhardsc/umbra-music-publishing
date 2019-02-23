@@ -25,7 +25,11 @@
 
   section.single-artist-content {
     position: relative;
-    top: -10vh;
+    top: -20vh;
+
+    @include media-query('med') {
+      top: -10vh;
+    }
   }
 
   section.artist-profile {
@@ -104,6 +108,10 @@
 
     .nextArrow,
     .prevArrow{
+
+      @media only screen and (min-width: 600px) and (max-width: 1499px) {
+        width: 100px;
+      }
       @media only screen and (min-width: 1500px) {
         width: 15em;
       }
