@@ -1,0 +1,127 @@
+.artists-template-publisher-single-artist {
+  .spacing {
+    height: 70vh;
+  }
+
+  @mixin single-artist-layout() {
+
+    h2 {
+      color: $umbra--dark-blue;
+      text-align: center;
+    }
+
+    p {
+      color: #212121;
+    }
+
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 5%;
+
+    @include media-query('med') {
+      padding: 0 70px;
+    }
+  }
+
+  section.single-artist-content {
+    position: relative;
+    top: -10vh;
+  }
+
+  section.artist-profile {
+    @include single-artist-layout;
+    text-align: center;
+
+    &::before {
+      content: '';
+      display: block;
+      border-bottom: 30px solid $white;
+      border-right: 30px solid transparent;
+    }
+
+    .wrap {
+      background: $white;
+    }
+
+    .title-wrap {
+      text-align: center;
+      background: $umbra--dark-blue;
+      color: $white;
+      padding: 10px 15px;
+
+      h1 {
+        margin: 0;
+        font-size: 3.8rem;
+
+        @include media-query('med') {
+          font-size: 4.8rem;
+        }
+      }
+    }
+
+    .social-media-links_wrap {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      a {
+        font-size: 1.5rem;
+        color: $umbra--dark-blue;
+        padding: 30px 1em;
+
+        @include media-query('med') {
+          font-size: 2rem;
+        }
+      }
+    }
+
+    .artist-music_wrap {
+
+      padding-top: 30px;
+
+      h4 {
+        font-size: 1.5rem;
+      }
+      .song {
+        max-width: 600px;
+        margin: 0 auto;
+      }
+    }
+  }
+
+  section.artist-video-playlist-slider {
+    background: $umbra--dark-blue;
+    text-align: center;
+    margin-top: 30px;
+
+    h2 {
+      color: $white;
+      margin-bottom: 60px;
+    }
+    .wrap {
+      padding: 60px 0 60px 0;
+    }
+
+    .nextArrow,
+    .prevArrow{
+      @media only screen and (min-width: 1500px) {
+        width: 15em;
+      }
+    }
+  }
+
+  section.artist-bio {
+    @include single-artist-layout;
+    background: $white;
+    padding-top: 60px !important;
+
+    .wrap {
+      padding-top: 0;
+      background: $white;
+      background-image: url(../../../../plugins/virtuoso-grandchild/assets/images/umbra-moon.png);
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+  }
+}
