@@ -1,6 +1,10 @@
 .artists-template-publisher-single-artist {
   .spacing {
-    height: 70vh;
+    height: 90vh;
+  }
+
+  .entry {
+    background: $umbra--lightest;
   }
 
   @mixin single-artist-layout() {
@@ -23,28 +27,42 @@
     }
   }
 
-  section.single-artist-content {
+  .virtuoso-block.frame-row {
     position: relative;
-    top: -20vh;
+    transform: rotate(180deg);
+    top: 1px;
+    height: 0;
+    svg {
+      path {
+        fill: $umbra--lightest;
+      }
 
-    @include media-query('med') {
-      top: -10vh;
     }
   }
+
+  //section.single-artist-content {
+    //position: relative;
+    //top: -20vh;
+    //
+    //@include media-query('med') {
+    //  top: -10vh;
+    //}
+  //}
 
   section.artist-profile {
     @include single-artist-layout;
     text-align: center;
 
-    &::before {
-      content: '';
-      display: block;
-      border-bottom: 30px solid $white;
-      border-right: 30px solid transparent;
-    }
+    // Cool style from Remo site
+    //&::before {
+    //  content: '';
+    //  display: block;
+    //  border-bottom: 30px solid $white;
+    //  border-right: 30px solid transparent;
+    //}
 
     .wrap {
-      background: $white;
+      background: $umbra--lightest;
     }
 
     .title-wrap {
@@ -52,6 +70,8 @@
       background: $umbra--dark-blue;
       color: $white;
       padding: 10px 15px;
+      max-width: 1100px;
+      margin: 0 auto;
 
       h1 {
         margin: 0;
@@ -86,24 +106,24 @@
       h4 {
         font-size: 1.5rem;
       }
-      .song {
-        max-width: 600px;
-        margin: 0 auto;
-      }
+      //.song {
+      //  max-width: 1100px;
+      //  margin: 0 auto;
+      //}
     }
   }
 
   section.artist-video-playlist-slider {
     background: $umbra--dark-blue;
     text-align: center;
-    margin-top: 30px;
+    margin-top: 130px;
 
     h2 {
       color: $white;
       margin-bottom: 60px;
     }
     .wrap {
-      padding: 60px 0 60px 0;
+      padding: 60px 0 100px 0;
     }
 
     .nextArrow,
@@ -120,12 +140,13 @@
 
   section.artist-bio {
     @include single-artist-layout;
-    background: $white;
+    background: $umbra--lightest;
     padding-top: 60px !important;
+    padding-bottom: 60px !important;
 
     .wrap {
       padding-top: 0;
-      background: $white;
+      background: $umbra--lightest;
       background-image: url(../../../../plugins/virtuoso-grandchild/assets/images/umbra-moon.png);
       background-position: center;
       background-size: contain;

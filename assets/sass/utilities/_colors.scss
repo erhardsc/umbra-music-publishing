@@ -16,6 +16,7 @@ $gray: #333;
 $umbra--blue-accent: #66FCF1;
 $transparent: rgba(0,0,0,0.0);
 $light: #C5C6C7;
+$umbra--lightest: #f7f7f7;
 //
 // Color Configuration
 //===========================
@@ -91,7 +92,7 @@ $siteFooter--link-color: $gray;
 $site-footer--border-color: $gray--lighter;
 $footer-widgets--background-color: $white;
 $footer-widgets--link-color: $link--color;
-$siteFooter__login--border-color: $white;
+$siteFooter__login--border-color: $umbra--dark-blue;
 
 //
 // Entry Content
