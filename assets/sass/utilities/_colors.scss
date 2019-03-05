@@ -17,6 +17,8 @@ $umbra--blue-accent: #66FCF1;
 $transparent: rgba(0,0,0,0.0);
 $light: #C5C6C7;
 $umbra--lightest: #f7f7f7;
+$umbra-gradient: linear-gradient(0deg, #1A1C25 -10%, $umbra--dark-blue 35%);;
+
 //
 // Color Configuration
 //===========================
@@ -87,11 +89,11 @@ $archive-pagination--hover-color: $white;
 // Footer
 //============================
 $siteFooter--background-color: $white;
-$siteFooter--color: $gray;
-$siteFooter--link-color: $gray;
+$siteFooter--color: $link--color;
+$siteFooter--link-color: $link--color;
 $site-footer--border-color: $gray--lighter;
 $footer-widgets--background-color: $white;
-$footer-widgets--link-color: $link--color;
+$footer-widgets--link-color: $gray;
 $siteFooter__login--border-color: $umbra--dark-blue;
 
 //

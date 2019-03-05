@@ -53,9 +53,10 @@
   }
   .virtuoso-block.team-grid {
     text-align: center;
-    background: url('../../../../plugins/virtuoso-grandchild/assets/images/bottom-bkg.svg');
+    background: url('../../../../plugins/virtuoso-grandchild/assets/images/dark-moon-background.svg'), $umbra-gradient;
     background-position: center;
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
 
     .wrap {
       max-width: 1100px;

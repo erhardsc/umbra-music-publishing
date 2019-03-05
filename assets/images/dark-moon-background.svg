@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 1439 1171" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.1 (72631) - https://sketchapp.com -->
+    <title>Background Copy 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="48.3646792%" y1="127.97159%" x2="48.3646792%" y2="75.0548256%" id="linearGradient-1">
+        <stop stop-color="#1A1C25" offset="0%"></stop>
+        <stop stop-color="#0B0C10" offset="100%"></stop>
+    </linearGradient>
+        <linearGradient x1="49.9999981%" y1="109.906805%" x2="49.9999981%" y2="-2.09579541%" id="linearGradient-2">
+            <stop stop-color="#1A1C25" offset="0%"></stop>
+            <stop stop-color="#0B0C10" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Pages" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Home-Page-v2" transform="translate(-1.000000, -3712.000000)">
+            <g id="The-Team" transform="translate(1.000000, 3712.000000)">
+                <g id="Background-Copy-2">
+                    <rect id="Rectangle-6" fill="url(#linearGradient-1)" x="0" y="0"></rect>
+                    <path d="M963.108248,774.538616 C896.768926,863.237289 789.193524,912.519697 677.668042,905.304388 C566.14256,898.089079 466.0188,835.369263 412,738.88384 C537.344376,764.328829 666.249972,715.561106 742.172039,613.972749 C818.094106,512.384392 827.166571,376.529052 765.409777,266 C874.861018,288.314541 965.256221,364.053143 1005.26374,466.964245 C1045.27126,569.875347 1029.38386,685.792748 963.108248,774.538616 Z" id="Path" fill="url(#linearGradient-2)"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
