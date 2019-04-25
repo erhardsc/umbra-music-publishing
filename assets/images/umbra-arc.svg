@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="3172px" height="296px" viewBox="0 0 3172 296" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 53.1 (72631) - https://sketchapp.com -->
-    <title>Rectangle</title>
+<svg viewBox="0 0 2000 518" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>Combined Shape</title>
     <desc>Created with Sketch.</desc>
     <g id="Design-Elements-(WIP)" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <path d="M1586,0 C2121.62437,0 2650.29103,98.5 3172,295.5 L0,295.5 C521.708967,98.5 1050.37563,1.3669621e-14 1586,0 Z" id="Rectangle" fill="#1F2833"></path>
+        <path d="M1999.99936,518 L0,518 L0,347 L0.00101890763,347 C0.000339711476,346.833361 0,346.666694 0,346.5 C0,155.133334 447.71525,0 1000,0 C1552.28475,0 2000,155.133334 2000,346.5 C2000,346.666694 1999.99966,346.833361 1999.99898,347 L1999.99936,518 Z" id="Combined-Shape" fill="#FFFFFF"></path>
     </g>
 </svg>

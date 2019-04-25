@@ -1,0 +1,150 @@
+// Virtuoso Portfolio image gallery overrides for Monopole
+
+.virtuoso_portfolio_image_gallery {
+
+  background: $umbra--dark-blue;
+  .category_selector {
+
+    text-align: center;
+    margin: 3em 0;
+
+    .categories {
+      margin-left: 8px;
+
+      @include media-query('sm') {
+        margin-left: 0;
+      }
+      @include media-query('med') {
+        margin-left: 25px;
+      }
+
+      a {
+
+        @include media-query('sm') {
+          font-size: 12px;
+        }
+
+        &:first-child {
+          margin-right: 8px;
+
+          @include media-query('med') {
+            margin-right: 25px;
+          }
+        }
+
+        &:last-child {
+          margin-left: 8px;
+
+          @include media-query('med') {
+            margin-left: 25px;
+          }
+        }
+
+        &:not(:first-child):not(:last-child) {
+          margin: 0 8px;
+
+          @include media-query('med') {
+            margin: 0 25px;
+          }
+        }
+
+        &.active {
+          color: #fff;
+          border-bottom: 1px solid $umbra--blue-accent;
+        }
+
+      }
+    }
+
+  }
+
+  .gallery_wrap {
+    display: block;
+    height: unset !important;
+
+    @include media-query('med'){
+      margin: -80px 0 0 -80px;
+    }
+
+      li {
+        display: flex;
+        justify-content: center;
+
+        @include media-query('med'){
+          //@supports not (position: sticky) {
+          flex-grow: 1;
+          flex-shrink: 1;
+          //}
+
+          //@supports not (position: sticky) {
+
+          width: 280px;
+          padding: 80px 0 0 80px;
+          //}
+
+        }
+
+        &:not(:first-child):not(:last-child) {
+          margin: 60px 0;
+
+          @include media-query('med'){
+            margin: 0;
+          }
+        }
+
+      }
+
+    }
+
+  }
+
+  .portfolio_header_wrap {
+    position: relative !important;
+    //bottom: 15px !important;
+    top: unset !important;
+    width: unset  !important;
+    text-align: center !important;
+    transform: translateY(-15%) !important;
+    right: unset !important;
+    left: unset !important;
+    background: $white;
+    padding-bottom: 25px;
+    z-index: 1;
+
+    @include media-query('med') {
+      transform: translateY(-50%) !important;
+    }
+
+    &::before {
+      content: url("/wp-content/plugins/virtuoso-grandchild/assets/images/umbra-arc.svg");
+      width: 100%;
+      position: absolute;
+      bottom: 25px;
+      right: 0;
+      z-index: -1;
+    }
+
+    a {
+      color: $umbra--dark-blue;
+    }
+
+
+  }
+
+  img.single_slider_item {
+    width: 100%;
+
+    @supports (position: sticky) {
+      width: 280px;
+      object-fit: cover;
+    }
+    border-radius: 2px;
+    border: 2px solid $white;
+
+    @include media-query('med') {
+      height: 280px;
+
+    }
+
+  }
+
