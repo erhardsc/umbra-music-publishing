@@ -2,11 +2,21 @@
 
 .virtuoso_portfolio_image_gallery {
 
-  background: $umbra--dark-blue;
-  .category_selector {
+  $grid-gutter-spacing: 30px;
 
+  max-width: unset !important;
+  background: $umbra--dark-blue;
+
+  .virtuoso_gallery {
+    padding: 0 5%;
+
+    @include media-query('med') {
+      padding: 0 70px;
+    }
+  }
+
+  .category_selector {
     text-align: center;
-    margin: 3em 0;
 
     .categories {
       margin-left: 8px;
@@ -60,38 +70,46 @@
 
   .gallery_wrap {
     display: block;
-    height: unset !important;
 
-    @include media-query('med'){
-      margin: -80px 0 0 -80px;
+    @include media-query('med') {
+      margin: -$grid-gutter-spacing 0 0 -$grid-gutter-spacing !important;
     }
 
-      li {
-        display: flex;
-        justify-content: center;
+    .portfolio_group_wrap {
+      padding-top: $grid-gutter-spacing;
 
-        @include media-query('med'){
-          //@supports not (position: sticky) {
-          flex-grow: 1;
-          flex-shrink: 1;
-          //}
-
-          //@supports not (position: sticky) {
-
-          width: 280px;
-          padding: 80px 0 0 80px;
-          //}
-
+      &:not(:first-child) {
+        @include media-query('med') {
+          padding-top: 0;
         }
+      }
 
-        &:not(:first-child):not(:last-child) {
-          margin: 60px 0;
+    }
 
-          @include media-query('med'){
-            margin: 0;
-          }
+    li {
+      display: flex;
+      justify-content: center;
+
+      @include media-query('med') {
+        //@supports not (position: sticky) {
+        flex-grow: 1;
+        flex-shrink: 1;
+        //}
+
+        //@supports not (position: sticky) {
+
+        width: 280px;
+        padding: $grid-gutter-spacing 0 0 $grid-gutter-spacing !important;
+        //}
+
+      }
+
+      &:not(:first-child):not(:last-child) {
+        margin: $grid-gutter-spacing 0 !important;
+
+        @include media-query('med') {
+          margin: 0 !important;
         }
-
       }
 
     }
@@ -102,7 +120,7 @@
     position: relative !important;
     //bottom: 15px !important;
     top: unset !important;
-    width: unset  !important;
+    width: unset !important;
     text-align: center !important;
     transform: translateY(-15%) !important;
     right: unset !important;
@@ -147,4 +165,11 @@
     }
 
   }
+
+  .show_more {
+    a{
+      margin-top: $grid-gutter-spacing !important;
+    }
+  }
+}
 
