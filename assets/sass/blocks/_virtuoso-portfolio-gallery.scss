@@ -6,6 +6,7 @@
 
   max-width: unset !important;
   background: $umbra--dark-blue;
+  padding: 2em 0;
 
   .virtuoso_gallery {
     padding: 0 5%;
@@ -19,14 +20,8 @@
     text-align: center;
 
     .categories {
-      margin-left: 8px;
-
-      @include media-query('sm') {
-        margin-left: 0;
-      }
-      @include media-query('med') {
-        margin-left: 25px;
-      }
+      padding: 2em 0;
+      margin: 0 !important;
 
       a {
 
@@ -99,7 +94,7 @@
         //@supports not (position: sticky) {
 
         width: 280px;
-        padding: $grid-gutter-spacing 0 0 $grid-gutter-spacing !important;
+        padding: 0 !important;
         //}
 
       }

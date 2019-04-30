@@ -41,13 +41,14 @@
 
   input[type=button]{
     padding-left: 20px;
-    color: $white;
-    border-bottom: 1px solid $white;
+    color: $black;
+    border: 1px solid $umbra--blue-accent;
     background: none;
     box-shadow: none;
-    border-radius: 0;
+    border-radius: 4px;
 
     &:hover {
+      color: $black;
       box-shadow: none;
     }
 
