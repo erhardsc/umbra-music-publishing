@@ -91,11 +91,12 @@
       a {
         font-size: 1.5rem;
         color: $umbra--dark-blue;
-        padding: 30px 1em;
-
-        @include media-query('med') {
-          font-size: 2rem;
-        }
+        margin: 30px 1em;
+        padding: 8px;
+        background: $umbra--blue-accent;
+        border-radius: 50%;
+        width: 36px;
+        height: 36px;
       }
     }
 
