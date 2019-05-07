@@ -51,7 +51,7 @@ $button--disable-color: $gray--medium;
 //
 // Header
 //======================
-$site-header--background-color: $transparent;
+$site-header--background-color: linear-gradient(180deg,$umbra--dark-blue, $transparent);
 $site-title--link-color: $white;
 $hero-overlay--background-color: none;
 $hero-overlay--background-transition-color: none;
